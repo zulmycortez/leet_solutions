@@ -1,6 +1,8 @@
 const problemTexts = {
   twoSum: 'Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target',
-  addTwoNumbers: 'You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.'
+  addTwoNumbers: 'You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.',
+  removeElement: 'Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The relative order of the elements may be changed.'
+
 }
 
 export { problemTexts }
