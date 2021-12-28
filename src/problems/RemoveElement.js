@@ -3,14 +3,30 @@ import PageTemplate from '../components/PageTemplate/PageTemplate'
 
 const RemoveElement = () => {
 
+  // solution 1:
+  // const removeElement = (nums, value) => {
+  //   let newArray = []
+  //   for (let i = 0; i < nums.length; i++) {
+  //     if (nums[i] !== value) {
+  //       newArray.push(nums[i]);
+  //     }
+  //   }
+  //   return newArray
+  // }
+
+  // solution 2:
   const removeElement = (nums, value) => {
-    let newArray = []
-    for (let i = 0; i < nums.length; i++) {
-      if (nums[i] !== value) {
-        newArray.push(nums[i]);
+    let i = 0;
+    let length = nums.length;
+
+    while (i < length) {
+      if (nums[i] === value) {
+        nums.splice(i, 1)
       }
+      i++;
     }
-    return newArray
+
+    return nums;
   }
 
   return (

@@ -44,14 +44,14 @@ const AddTwoNumbers = () => {
     
     finalSum = parseInt(firstSum) + parseInt(secondSum);
     finalSum = Array.from(String(finalSum), Number);
-    
+
     return finalSum
   }
 
   return (
     <PageTemplate
       problem={problemTexts.addTwoNumbers}
-      input={'input: l1 = [2,4,3], l2 = [5,6,4]'}
+      input={'l1 = [2,4,3], l2 = [5,6,4]'}
       result={JSON.stringify(addTwoNumbers([2,4,3], [5,6,4]))}
     />
   )

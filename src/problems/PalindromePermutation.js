@@ -16,7 +16,7 @@ const PalindromePermutation = () => {
       }
     })
 
-    if (str.length % 2 === 0 && set.size === 0 || set.size === 1) {
+    if ((str.length % 2 === 0 && set.size === 0) || (set.size === 1)) {
       return true;
     }
     return false;

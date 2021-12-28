@@ -7,7 +7,10 @@ const problemTexts = {
   fourSum: 'Given an array nums of n integers, return an array of all the unique quadruplets that sum to the target.',
   maxSubarry: 'Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.',
   oneAway: 'Given two strings, write a function to check if they are one edit or zero edits away',
-  palindromePermutation: 'Given a string, write a function to check if it a permutation of a palindrome'
+  palindromePermutation: 'Given a string, write a function to check if it a permutation of a palindrome',
+  removeDuplicates: 'Remove all duplicates found in an array',
+  stringCompression: 'Compressed all the letters in a string to only one letter. For example for aabbcaa we should expect abca returned.',
+  mergeTwoSortedArrays: 'Merge the two lists in a one sorted list. The list should be made by splicing together the nodes of the first two lists.'
 }
 
 export { problemTexts }

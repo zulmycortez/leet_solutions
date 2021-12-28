@@ -2,6 +2,7 @@ import { problemTexts } from '../constants/problemTexts'
 import PageTemplate from '../components/PageTemplate/PageTemplate'
 
 const TwoSum = () => {
+
   const twoSum = (nums, target) => {
     for (let i = 0; i < nums.length; i++) {
       for (let j = i + 1; j < nums.length; j++) {

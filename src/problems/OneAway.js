@@ -53,7 +53,7 @@ const OneAway = () => {
   return (
     <PageTemplate
       problem={problemTexts.addTwoNumbers}
-      input={'input: zulmy, zulmy1'}
+      input={'zulmy, zulmy1'}
       result={JSON.stringify(oneAway('zulmy', 'zulmy1'))}
     />
   )
