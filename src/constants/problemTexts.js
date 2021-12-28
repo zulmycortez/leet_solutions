@@ -6,7 +6,8 @@ const problemTexts = {
   checkPermutation: 'Given two strings, write a method to decide if one is a permutation of the other.',
   fourSum: 'Given an array nums of n integers, return an array of all the unique quadruplets that sum to the target.',
   maxSubarry: 'Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.',
-  oneAway: 'Given two strings, write a function to check if they are one edit or zero edits away'
+  oneAway: 'Given two strings, write a function to check if they are one edit or zero edits away',
+  palindromePermutation: 'Given a string, write a function to check if it a permutation of a palindrome'
 }
 
 export { problemTexts }
