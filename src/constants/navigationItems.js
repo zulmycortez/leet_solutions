@@ -13,6 +13,7 @@ import MergeSortedList from "../problems/MergeSortedLists"
 import MaxSubArray from "../problems/MaxSubArray"
 import PopulatingPointersInNode from "../problems/PopulatingPointersInNode"
 import AreBinaryTreesIdentical from "../problems/AreBinaryTreesIdentical"
+import MedianTwoSorted from "../problems/MedianTwoSorted"
 
 const navigationItems = [
   {
@@ -109,6 +110,12 @@ const navigationItems = [
     key: 'areBinaryTreesIdentical',
     link: '/are-binary-trees-identical',
     component: <AreBinaryTreesIdentical />
+  },
+  {
+    label: 'MedianTwoSorted',
+    key: 'medianTwoSorted',
+    link: '/median-two-sorted',
+    component: <MedianTwoSorted />
   },
 ]
 

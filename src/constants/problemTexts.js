@@ -10,7 +10,8 @@ const problemTexts = {
   palindromePermutation: 'Given a string, write a function to check if it a permutation of a palindrome',
   removeDuplicates: 'Remove all duplicates found in an array',
   stringCompression: 'Compressed all the letters in a string to only one letter. For example for aabbcaa we should expect abca returned.',
-  mergeTwoSortedArrays: 'Merge the two lists in a one sorted list. The list should be made by splicing together the nodes of the first two lists.'
+  mergeTwoSortedArrays: 'Merge the two lists in a one sorted list. The list should be made by splicing together the nodes of the first two lists.',
+  medianTwoSorted: 'Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.'
 }
 
 export { problemTexts }
