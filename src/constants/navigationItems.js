@@ -11,6 +11,8 @@ import OneAway from "../problems/OneAway"
 import StringCompression from "../problems/StringCompression"
 import MergeSortedList from "../problems/MergeSortedLists"
 import MaxSubArray from "../problems/MaxSubArray"
+import PopulatingPointersInNode from "../problems/PopulatingPointersInNode"
+import AreBinaryTreesIdentical from "../problems/AreBinaryTreesIdentical"
 
 const navigationItems = [
   {
@@ -95,6 +97,18 @@ const navigationItems = [
     key: 'maxSubArray',
     link: '/max-sub-array',
     component: <MaxSubArray />
+  },
+  {
+    label: 'Populating Pointers In Node',
+    key: 'populatingPointersInNode',
+    link: '/populating-pointers-in-node',
+    component: <PopulatingPointersInNode />
+  },
+  {
+    label: 'Are Binary Trees Identical',
+    key: 'areBinaryTreesIdentical',
+    link: '/are-binary-trees-identical',
+    component: <AreBinaryTreesIdentical />
   },
 ]
 
