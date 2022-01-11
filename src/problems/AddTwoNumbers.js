@@ -25,29 +25,55 @@ const AddTwoNumbers = () => {
   // }
 
   // solution 2
+  // const addTwoNumbers = (l1, l2) => {
+  //   let firstPointer = l1.length - 1;
+  //   let secondPointer = l2.length - 1;
+  //   let firstSum = '';
+  //   let secondSum = '';
+  //   let finalSum = 0;
+
+  //   while (0 <= firstPointer) {
+  //     firstSum += l1[firstPointer];
+  //     firstPointer--;
+  //   }
+
+  //   while (0 <= secondPointer) {
+  //     secondSum += l2[secondPointer];
+  //     secondPointer--;
+  //   }
+  //   // type casting 
+  //   finalSum = parseInt(firstSum) + parseInt(secondSum);
+  //   finalSum = Array.from(String(finalSum), Number);
+
+  //   return finalSum
+  // }
+
+
+  // T: O(n)
+  // S: O(n)
   const addTwoNumbers = (l1, l2) => {
-    let firstPointer = l1.length - 1;
-    let secondPointer = l2.length - 1;
-    let firstSum = '';
-    let secondSum = '';
-    let finalSum = 0;
+    // Take the reverse "string" made from each array
+    // Use string as a number, sum the 2 numbers together
+    // Take this number, loop through each number to create items in an array.
 
-    while (0 <= firstPointer) {
-      firstSum += l1[firstPointer];
-      firstPointer--;
-    }
+    // global result
+    let result = [];
+    // reversing array and converting to a string
+    let l1ToString = l1.reverse().join('');
+    let l2ToString = l2.reverse().join('');
+    // turning strings into numbers for sumation
+    let sum = parseInt(l1ToString) + parseInt(l2ToString);
+    // type casting numbers back to string for array conversion
+    let sumToString = sum.toString();
+    // creating array of letters
+    let sumToArray = [...sumToString]
 
-    while (0 <= secondPointer) {
-      secondSum += l2[secondPointer];
-      secondPointer--;
+    for (let i = 0; i < sumToArray.length; i ++) {
+      result.push(parseInt(sumToArray[i]));
     }
     
-    finalSum = parseInt(firstSum) + parseInt(secondSum);
-    finalSum = Array.from(String(finalSum), Number);
-
-    return finalSum
+    return result;
   }
-
   return (
     <PageTemplate
       problem={problemTexts.addTwoNumbers}

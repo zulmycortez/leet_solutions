@@ -16,11 +16,28 @@ const RemoveDuplicates = () => {
   // }
 
   // solution 2:
-  const removeDuplicates = (arr) => {
-    let set = new Set();
-    arr.forEach((num) => set.add(num));
+  // const removeDuplicates = (arr) => {
+  //   let set = new Set();
+  //   arr.forEach((num) => set.add(num));
 
-    return Array.from(set);
+  //   return Array.from(set);
+  // }
+
+  // solution 3:
+  // T: O(n)
+  // S: O(1)
+  const removeDuplicates = arr => {
+    let nonDuplicate = 1;
+    let i = 0;
+
+    while (i < arr.length) {
+      if (arr[nonDuplicate - 1] !== arr[i]) {
+        arr[nonDuplicate] = arr[i];
+        nonDuplicate += 1;
+      }
+      i++;
+    }
+    return arr
   }
 
   return (

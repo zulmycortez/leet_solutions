@@ -11,7 +11,22 @@ const problemTexts = {
   removeDuplicates: 'Remove all duplicates found in an array',
   stringCompression: 'Compressed all the letters in a string to only one letter. For example for aabbcaa we should expect abca returned.',
   mergeTwoSortedArrays: 'Merge the two lists in a one sorted list. The list should be made by splicing together the nodes of the first two lists.',
-  medianTwoSorted: 'Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.'
+  medianTwoSorted: 'Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.',
+  longestSubstringNoRepeating: 'Given a string s, find the length of the longest substring without repeating characters.',
+  reverseInteger: 'Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0',
+  zigzagConversion: 'Write the code that will take a string and make this conversion given a number of rows: string convert(string s, int numRows);',
+  isArray1Array2Equal: 'Given two arrays A and B of length N, determine if there is a way to make A equal to B by reversing any subarrays from array B any number of times.',
+  permutations: 'Given an array nums of distinct integers, return all the possible permutations. You can return the answer in any order.',
+  generatePerentheses: 'Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.',
+  threeSum: 'Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.',
+  atoi: '',
+  cyclicSort: 'We are given an array containing n objects. Each object, when created, was assigned a unique number from the range 1 to n based on their creation sequence. Write a function to sort the objects in-place on their creation sequence number in O(n)O(n) and without using any extra space.',
+  findMissingNumber: 'We are given an array containing n distinct numbers taken from the range 0 to n. Since the array has only n numbers out of the total n+1 numbers, find the missing number.',
+  smallestSubarrayGreatestSum: 'Given an array of positive numbers and a positive number ‘S,’ find the length of the smallest contiguous subarray whose sum is greater than or equal to ‘S’. Return 0 if no such subarray exists.',
+  squaringASortedArray: 'Given a sorted array, create a new array containing squares of all the numbers of the input array in the sorted order.',
+  longestSubstringMaxKDistinct: 'Given a string, find the length of the longest substring in it with no more than K distinct characters.',
+  fruitIntoBasket: 'Given an array of characters where each character represents a fruit tree, you are given two baskets, and your goal is to put maximum number of fruits in each basket. The only restriction is that each basket can have only one type of fruit.',
+  longestSubstringWithDistinct: ''
 }
 
 export { problemTexts }

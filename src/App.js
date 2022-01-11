@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <ul>
+      <ol>
         {items.map((item) => {
           const { key, label, link } = item;
           return (
@@ -16,7 +16,7 @@ const App = () => {
             </li>
           );
         })}
-      </ul>
+      </ol>
 
       <Routes>
         {items.map((item) => {

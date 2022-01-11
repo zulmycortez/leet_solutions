@@ -17,7 +17,7 @@ const MaxSubArray = () => {
   return (
     <PageTemplate
       problem={problemTexts.maxSubarry}
-      input={'input: [-2,1,-3,4,-1,2,1,-5,4]'}
+      input={'[-2,1,-3,4,-1,2,1,-5,4]'}
       result={JSON.stringify(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))}
     />
   )

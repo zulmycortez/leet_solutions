@@ -14,6 +14,23 @@ import MaxSubArray from "../problems/MaxSubArray"
 import PopulatingPointersInNode from "../problems/PopulatingPointersInNode"
 import AreBinaryTreesIdentical from "../problems/AreBinaryTreesIdentical"
 import MedianTwoSorted from "../problems/MedianTwoSorted"
+import LongestPalindromicSubstring from "../problems/LongestPalindromicSubstring"
+import LongestSubstringNoRepeating from "../problems/LongestSubstringNoRepeating"
+import ReverseInteger from "../problems/ReverseInteger"
+import ZigzagConversion from "../problems/ZigzagConversion"
+import IsArray1Array2Equal from "../problems/IsArray1Array2Equal"
+import Permutations from "../problems/Permutations"
+import GenerateParentheses from "../problems/GenerateParentheses"
+import ThreeSum from "../problems/ThreeSum"
+import Atoi from "../problems/Atoi"
+import MaxSubArrayK from "../problems/MaxSubArrayK"
+import CyclicSort from "../problems/CyclicSort"
+import FindMissingNumber from "../problems/FindMissingNumber"
+import SmallestSubarrayGreatestSum from "../problems/SmallestSubarrayGreatestSum"
+import SquaringASortedArray from "../problems/SquaringASortedArray"
+import LongestSubstringMaxKDistinct from "../problems/LongestSubstringMaxKDistinct"
+import FruitIntoBasket from "../problems/FruitIntoBasket"
+import LongestSubstringWithDistinct from "../problems/LongestSubstringWithDistinct"
 
 const navigationItems = [
   {
@@ -112,11 +129,113 @@ const navigationItems = [
     component: <AreBinaryTreesIdentical />
   },
   {
-    label: 'MedianTwoSorted',
+    label: 'Median Two Sorted',
     key: 'medianTwoSorted',
     link: '/median-two-sorted',
     component: <MedianTwoSorted />
   },
+  {
+    label: 'Longest Palindromic Substring',
+    key: 'longestPalindromicSubstring',
+    link: '/longest-palindromic-substring',
+    component: <LongestPalindromicSubstring />
+  },
+  {
+    label: 'Longest Substring No Repeating',
+    key: 'longestSubstringNoRepeating',
+    link: '/longest-substring-no-repeating',
+    component: <LongestSubstringNoRepeating />
+  },
+  {
+    label: 'Reverse Integer',
+    key: 'reverseInteger',
+    link: '/reverse-integer',
+    component: <ReverseInteger />
+  },
+  {
+    label: 'Zigzag Conversion',
+    key: 'zigzagConversion',
+    link: '/zigzag-conversion',
+    component: <ZigzagConversion />
+  },
+  {
+    label: 'Is Array1 Array2 Equal',
+    key: 'isArray1Array2Equal',
+    link: '/is-array1-array2-equal',
+    component: <IsArray1Array2Equal />
+  },
+  {
+    label: 'Permutations',
+    key: 'permutations',
+    link: '/permutations',
+    component: <Permutations />
+  },
+  {
+    label: 'Generate Perentheses',
+    key: 'generatePerentheses',
+    link: '/generate-perentheses',
+    component: <GenerateParentheses />
+  },
+  {
+    label: 'Three Sum',
+    key: 'threeSum',
+    link: '/three-sum',
+    component: <ThreeSum />
+  },
+  {
+    label: 'Atoi',
+    key: 'atoi',
+    link: '/atoi',
+    component: <Atoi />
+  },
+  {
+    label: 'Max SubArray K',
+    key: 'maxSubArrayK',
+    link: '/max-sub-array-k',
+    component: <MaxSubArrayK />
+  },
+  {
+    label: 'Cyclic Sort',
+    key: 'cyclicSort',
+    link: '/cyclic-sort',
+    component: <CyclicSort />
+  },
+  {
+    label: 'Find Missing Number',
+    key: 'findMissingNumber',
+    link: '/find-missing-number',
+    component: <FindMissingNumber />
+  },
+  {
+    label: 'Smallest Subarray Greatest Sum',
+    key: 'smallestSubarrayGreatestSum',
+    link: '/smallest-subarray-greatest-sum',
+    component: <SmallestSubarrayGreatestSum />
+  },
+  {
+    label: 'Squaring A Sorted Array',
+    key: 'squaringASortedArray',
+    link: '/squaring-a-sorted-array',
+    component: <SquaringASortedArray />
+  },
+  {
+    label: 'Longest Substring Max K Distinct',
+    key: 'longestSubstringMaxKDistinct',
+    link: '/longest-substring-max-k-distinct',
+    component: <LongestSubstringMaxKDistinct />
+  },
+  {
+    label: 'Fruit Into Basket',
+    key: 'fruitIntoBasket',
+    link: '/fruit-into-basket',
+    component: <FruitIntoBasket />
+  },
+  {
+    label: 'Longest Substring With Distinct Characters',
+    key: 'longestSubstringWithDistinct',
+    link: '/longest-substring-with-distinct',
+    component: <LongestSubstringWithDistinct />
+  }
 ]
 
 export { navigationItems }
