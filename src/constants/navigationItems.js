@@ -31,6 +31,8 @@ import SquaringASortedArray from "../problems/SquaringASortedArray"
 import LongestSubstringMaxKDistinct from "../problems/LongestSubstringMaxKDistinct"
 import FruitIntoBasket from "../problems/FruitIntoBasket"
 import LongestSubstringWithDistinct from "../problems/LongestSubstringWithDistinct"
+import ThreeSumCloseToTarget from "../problems/ThreeSumCloseToTarget"
+import ThreeSumWithSmallerSum from "../problems/ThreeSumWithSmallerSum"
 
 const navigationItems = [
   {
@@ -235,7 +237,19 @@ const navigationItems = [
     key: 'longestSubstringWithDistinct',
     link: '/longest-substring-with-distinct',
     component: <LongestSubstringWithDistinct />
-  }
+  },
+  {
+    label: 'Three Sum Close To Target',
+    key: 'threeSumCloseToTarget',
+    link: '/three-sum-close-to-target',
+    component: <ThreeSumCloseToTarget />
+  },
+  {
+    label: 'Three Sum With Smaller Sum',
+    key: 'threeSumWithSmallerSum',
+    link: '/three-sum-with-smaller-sum',
+    component: <ThreeSumWithSmallerSum />
+  },
 ]
 
 export { navigationItems }

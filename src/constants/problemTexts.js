@@ -26,7 +26,9 @@ const problemTexts = {
   squaringASortedArray: 'Given a sorted array, create a new array containing squares of all the numbers of the input array in the sorted order.',
   longestSubstringMaxKDistinct: 'Given a string, find the length of the longest substring in it with no more than K distinct characters.',
   fruitIntoBasket: 'Given an array of characters where each character represents a fruit tree, you are given two baskets, and your goal is to put maximum number of fruits in each basket. The only restriction is that each basket can have only one type of fruit.',
-  longestSubstringWithDistinct: ''
+  longestSubstringWithDistinct: '',
+  threeSumCloseToTarget: '',
+  threeSumWithSmallerSum: '',
 }
 
 export { problemTexts }

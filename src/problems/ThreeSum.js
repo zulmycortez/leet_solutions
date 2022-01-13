@@ -3,62 +3,42 @@ import PageTemplate from '../components/PageTemplate/PageTemplate'
 
 const ThreeSum = () => {
 
-  const twoSum = (j, target, nums) => {
-    let k = nums.length - 1;
-    let result = [];
+  const twoSum = (left, nums, target, result) => {
+    let right = nums.length - 1;
 
-    while (j < k) {
-      let left = nums[j];
-      let right = nums[k];
-
-      if (left + right > target) {
-        k--;
-      } else if (left + right < target) {
-        j++;
+    while (left < right) {
+      let currentSum = nums[left] + nums[right];
+      if (currentSum === target) {
+        result.push([(-target), nums[left], nums[right]]);
+        left += 1;
+        right -= 1;
+        while (left < right && nums[left] === nums[left - 1]) left += 1; // avoid duplicates on the left
+        while (left < right && nums[right] === nums[right + 1]) right -= 1; // avoid duplicates on the right
+      } else if (currentSum > target) {
+        right -= 1;
       } else {
-        result.push([(target * -1), left, right]);
-        while (j < k && nums[j] === nums[j+1]) j++;
-        while (j < k && nums[k] === nums[k+1]) k--;
-        j++;
-        k--;
+        left += 1;
       }
     }
-    return result;
   }
 
-
+  // T: O(nlogn + n^2  ~~ n^2)
+  // S: O(n)
   const threeSum = (nums) => {
-    // global result
-    nums.sort((a, b) => a - b)
+    nums.sort((a, b) => a - b);
     let result = [];
-
+    
     for (let i = 0; i < nums.length; i++) {
-      if (nums[i] === nums[i - 1]) continue;
-
-      let sumToZero = nums[i] * -1
-      let subResult = twoSum(i + 1, sumToZero, nums);
-      result.push(...subResult)
+      if (i > 0 && nums[i] === nums[i - 1]) continue; // skip the same element to avoid triplet duplicate
+      twoSum(i + 1, nums, -nums[i], result);
     }
     return result;
   }
-
-  // const threeSum = (nums) => {
-  //   for (let i = 0; i < nums.length; i++) {
-  //     for (let j = i + 1; j < nums.length; j++) {
-  //       for (let k = i + 2; k < nums.length; k++) {
-  //         if (nums[i] + nums[j] + nums[k]=== 0) {
-  //           return [i, j, k]
-  //         }
-  //       }
-
-  //     }
-  //   }
-  // }
 
   return (
     <PageTemplate
       problem={problemTexts.threeSum}
-      input={'[-1,0,1,2,-1,-4]'}
+      input={'[-3,0,1,2,-1,1,-2]'}
       result={JSON.stringify(threeSum([-1,0,1,2,-1,-4]))}
     />
   )

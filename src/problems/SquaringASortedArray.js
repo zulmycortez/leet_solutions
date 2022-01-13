@@ -21,26 +21,26 @@ const SquaringASortedArray = () => {
   // T: O(n)
   // S: O(n)
   const squaringASortedArray = (arr) => {
-    const length = arr.length;
+    let length = arr.length;
     let squares = Array(length).fill(0);
-    let highestSquareIdx = length - 1;
+    let highestSquareIndex = length - 1;
     let left = 0;
     let right = length - 1;
 
     while (left <= right) {
       let leftSquare = arr[left] * arr[left];
       let rightSquare = arr[right] * arr[right];
+
       if (leftSquare > rightSquare) {
-        squares[highestSquareIdx] = leftSquare;
-        left += 1;
+        squares[highestSquareIndex] = leftSquare;
+        left +=1;
       } else {
-        squares[highestSquareIdx] = rightSquare;
-        right -= 1;
+        squares[highestSquareIndex] = rightSquare;
+        right += 1;
       }
-      highestSquareIdx -= 1;
+      highestSquareIndex -= 1;
     }
-    return squares;
-}
+  }
   
     
 
