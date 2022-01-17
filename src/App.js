@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom' 
+import { BrowserRouter, Routes, Route } from 'react-router-dom' 
 import { navigationItems } from './constants/navigationItems';
+import NavTable from './components/NavTable/NavTable'
 import './App.css';
 
 const App = () => {
@@ -7,16 +8,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <ol>
-        {items.map((item) => {
-          const { key, label, link } = item;
-          return (
-            <li key={key}>
-              <Link key={key} to={link}>{label}</Link>
-            </li>
-          );
-        })}
-      </ol>
+      <NavTable items={items} />
 
       <Routes>
         {items.map((item) => {

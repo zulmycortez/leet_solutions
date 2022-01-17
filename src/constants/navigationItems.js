@@ -33,36 +33,42 @@ import FruitIntoBasket from "../problems/FruitIntoBasket"
 import LongestSubstringWithDistinct from "../problems/LongestSubstringWithDistinct"
 import ThreeSumCloseToTarget from "../problems/ThreeSumCloseToTarget"
 import ThreeSumWithSmallerSum from "../problems/ThreeSumWithSmallerSum"
+import patterns from "./patterns"
 
 const navigationItems = [
   {
-    label: 'Home',
-    key: 'home',
-    link: '/'
+    label: 'About',
+    key: 'about',
+    link: '/',
+    pattern: 'about'
   },
   {
     label: 'Two Sum',
     key: 'twoSum',
     link: '/two-sum',
-    component: <TwoSum />
+    component: <TwoSum />,
+    pattern: patterns.twoPointers
   },
   {
     label: 'Add Two Numbers',
     key: 'addTwoNumbers',
     link: '/add-two-numbers',
-    component: <AddTwoNumbers />
+    component: <AddTwoNumbers />,
+    pattern: patterns.twoPointers
   },
   {
     label: 'Remove Element',
     key: 'removeElement',
     link: '/remove-element',
-    component: <RemoveElement />
+    component: <RemoveElement />,
+    pattern: patterns.twoPointers
   },
   {
     label: 'Four Sum',
     key: 'fourSum',
     link: '/four-sum',
-    component: <FourSum />
+    component: <FourSum />,
+    pattern: patterns.twoPointers
   },
   {
     label: 'Remove Duplicates',
@@ -98,7 +104,8 @@ const navigationItems = [
     label: 'OneAway',
     key: 'oneAway',
     link: '/one-away',
-    component: <OneAway />
+    component: <OneAway />,
+    pattern: patterns.hashMap
   },
   {
     label: 'StringCompression',
@@ -116,7 +123,8 @@ const navigationItems = [
     label: 'Max SubArray',
     key: 'maxSubArray',
     link: '/max-sub-array',
-    component: <MaxSubArray />
+    component: <MaxSubArray />,
+    pattern: patterns.slidingWindow
   },
   {
     label: 'Populating Pointers In Node',
@@ -140,13 +148,15 @@ const navigationItems = [
     label: 'Longest Palindromic Substring',
     key: 'longestPalindromicSubstring',
     link: '/longest-palindromic-substring',
-    component: <LongestPalindromicSubstring />
+    component: <LongestPalindromicSubstring />,
+    pattern: patterns.slidingWindow
   },
   {
     label: 'Longest Substring No Repeating',
     key: 'longestSubstringNoRepeating',
     link: '/longest-substring-no-repeating',
-    component: <LongestSubstringNoRepeating />
+    component: <LongestSubstringNoRepeating />,
+    pattern: patterns.slidingWindow
   },
   {
     label: 'Reverse Integer',
@@ -182,7 +192,8 @@ const navigationItems = [
     label: 'Three Sum',
     key: 'threeSum',
     link: '/three-sum',
-    component: <ThreeSum />
+    component: <ThreeSum />,
+    pattern: patterns.twoPointers
   },
   {
     label: 'Atoi',
@@ -194,25 +205,29 @@ const navigationItems = [
     label: 'Max SubArray K',
     key: 'maxSubArrayK',
     link: '/max-sub-array-k',
-    component: <MaxSubArrayK />
+    component: <MaxSubArrayK />,
+    pattern: patterns.slidingWindow
   },
   {
     label: 'Cyclic Sort',
     key: 'cyclicSort',
     link: '/cyclic-sort',
-    component: <CyclicSort />
+    component: <CyclicSort />,
+    pattern: patterns.cyclicSort
   },
   {
     label: 'Find Missing Number',
     key: 'findMissingNumber',
     link: '/find-missing-number',
-    component: <FindMissingNumber />
+    component: <FindMissingNumber />,
+    pattern: patterns.cyclicSort
   },
   {
     label: 'Smallest Subarray Greatest Sum',
     key: 'smallestSubarrayGreatestSum',
     link: '/smallest-subarray-greatest-sum',
-    component: <SmallestSubarrayGreatestSum />
+    component: <SmallestSubarrayGreatestSum />,
+    pattern: patterns.slidingWindow
   },
   {
     label: 'Squaring A Sorted Array',
@@ -224,31 +239,36 @@ const navigationItems = [
     label: 'Longest Substring Max K Distinct',
     key: 'longestSubstringMaxKDistinct',
     link: '/longest-substring-max-k-distinct',
-    component: <LongestSubstringMaxKDistinct />
+    component: <LongestSubstringMaxKDistinct />,
+    pattern: patterns.slidingWindow
   },
   {
     label: 'Fruit Into Basket',
     key: 'fruitIntoBasket',
     link: '/fruit-into-basket',
-    component: <FruitIntoBasket />
+    component: <FruitIntoBasket />,
+    pattern: patterns.slidingWindow
   },
   {
     label: 'Longest Substring With Distinct Characters',
     key: 'longestSubstringWithDistinct',
     link: '/longest-substring-with-distinct',
-    component: <LongestSubstringWithDistinct />
+    component: <LongestSubstringWithDistinct />,
+    pattern: patterns.slidingWindow
   },
   {
     label: 'Three Sum Close To Target',
     key: 'threeSumCloseToTarget',
     link: '/three-sum-close-to-target',
-    component: <ThreeSumCloseToTarget />
+    component: <ThreeSumCloseToTarget />,
+    pattern: patterns.twoPointers
   },
   {
     label: 'Three Sum With Smaller Sum',
     key: 'threeSumWithSmallerSum',
     link: '/three-sum-with-smaller-sum',
-    component: <ThreeSumWithSmallerSum />
+    component: <ThreeSumWithSmallerSum />,
+    pattern: patterns.twoPointers
   },
 ]
 
