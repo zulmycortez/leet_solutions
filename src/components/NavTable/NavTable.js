@@ -4,6 +4,7 @@ import patterns from '../../constants/patterns'
 import NavItem from './NavItem'
 import Divider from '../Divider/Divider'
 import Checkbox from '../Checkbox/Checkbox'
+import Input from '../Input/Input'
 
 // Navtable will be the left side table of contents.
 // The hierarchy will be:
@@ -11,10 +12,19 @@ import Checkbox from '../Checkbox/Checkbox'
 //   a. Problem Name
 
 const NavTable = ({ items }) => {
-  const [openAll, setOpenAll] = useState(false)
-
+  const [openAll, setOpenAll] = useState(false);
+  const [searchValue, setSearchValue] = useState('')
+  
   const onCheckboxChange = () => {
     setOpenAll(!openAll);
+  }
+
+  const onSearchChange = e => {
+    setSearchValue(e.target.value);
+  }
+
+  const searchedItems = (items) => {
+    return items.filter((item) => item.label.includes(searchValue));
   }
 
   return (
@@ -26,7 +36,14 @@ const NavTable = ({ items }) => {
           label="Open all problems?"
         />
       </div>
-      <NavItem menuOn={openAll} items={items} pattern={patterns.about} />
+      <div className="__search-input">
+        <Input
+          name="searchValue"
+          onChange={onSearchChange}
+          placeholder="Search Problem"
+        />
+      </div>
+      <NavItem menuOn={openAll} items={searchedItems(items)} pattern={patterns.about} />
       <Divider />
       <NavItem menuOn={openAll} items={items} pattern={patterns.slidingWindow} />
       <Divider />

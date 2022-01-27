@@ -22,7 +22,10 @@ const CheckboxStyle = styled.div`
   }
   .__checkbox-label {
     color: ${props => props.hovered ? "#C8CDCA" : "black"};
-    padding-left: .5rem;
+    padding-left: 1rem;
+    svg {
+      fill: ${props => props.hovered ? "#C8CDCA" : "black"};
+    }
   }
 `
 
