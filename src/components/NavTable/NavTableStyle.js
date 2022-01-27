@@ -16,6 +16,9 @@ const NavTableStyle = styled.div`
   .count {
     margin-top: 1em;
   }
+  .__checkbox-open-all {
+    padding: 1em;
+  }
 `
 
 

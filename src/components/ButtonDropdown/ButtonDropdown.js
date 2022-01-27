@@ -1,5 +1,5 @@
 import ButtonDropdownStyle from './ButtonDropdownStyle'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import H3 from '../H3/H3'
 import DropdownMenu from './DropdownMenu'
 
@@ -15,10 +15,14 @@ const divStyle = {
   margin: 0
 }
 
-const ButtonDropdown = ({ text, items }) => {
+const ButtonDropdown = ({ text, items, on}) => {
   const [open, setOpen] = useState(false)
 
   const onToggle = () => setOpen(!open);
+
+  useEffect(() => {
+    on? setOpen(true) : setOpen(false);
+  }, [on])
 
   return (
     <ButtonDropdownStyle>

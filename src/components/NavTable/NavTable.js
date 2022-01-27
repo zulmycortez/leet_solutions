@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavTableStyle from './NavTableStyle'
 import patterns from '../../constants/patterns'
 import NavItem from './NavItem'
 import Divider from '../Divider/Divider'
+import Checkbox from '../Checkbox/Checkbox'
 
 // Navtable will be the left side table of contents.
 // The hierarchy will be:
@@ -10,19 +11,30 @@ import Divider from '../Divider/Divider'
 //   a. Problem Name
 
 const NavTable = ({ items }) => {
-  // items: key, link, label
+  const [openAll, setOpenAll] = useState(false)
+
+  const onCheckboxChange = () => {
+    setOpenAll(!openAll);
+  }
 
   return (
     <NavTableStyle>
-      <NavItem items={items} pattern={patterns.about} />
+      <div className="__checkbox-open-all">
+        <Checkbox
+          value={openAll}
+          onChange={onCheckboxChange}
+          label="Open all problems?"
+        />
+      </div>
+      <NavItem menuOn={openAll} items={items} pattern={patterns.about} />
       <Divider />
-      <NavItem items={items} pattern={patterns.slidingWindow} />
+      <NavItem menuOn={openAll} items={items} pattern={patterns.slidingWindow} />
       <Divider />
-      <NavItem items={items} pattern={patterns.cyclicSort} />
+      <NavItem menuOn={openAll} items={items} pattern={patterns.cyclicSort} />
       <Divider />
-      <NavItem items={items} pattern={patterns.twoPointers} />
+      <NavItem menuOn={openAll} items={items} pattern={patterns.twoPointers} />
       <Divider />
-      <NavItem items={items} pattern={patterns.hashMap} />
+      <NavItem menuOn={openAll} items={items} pattern={patterns.hashMap} />
       <Divider />
       <div className="count">
         # of problems: {items.length}
