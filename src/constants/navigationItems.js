@@ -34,13 +34,15 @@ import LongestSubstringWithDistinct from "../problems/LongestSubstringWithDistin
 import ThreeSumCloseToTarget from "../problems/ThreeSumCloseToTarget"
 import ThreeSumWithSmallerSum from "../problems/ThreeSumWithSmallerSum"
 import patterns from "./patterns"
+import About from "../pages/About/About"
 
 const navigationItems = [
   {
     label: 'About',
     key: 'about',
     link: '/',
-    pattern: 'about'
+    pattern: 'about',
+    component: <About />
   },
   {
     label: 'Two Sum',
