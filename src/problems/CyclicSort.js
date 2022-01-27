@@ -10,7 +10,7 @@ const CyclicSort = () => {
 
     while (i < length) {
       let j = arr[i] - 1;
-      console.log(arr[j])
+
       if (arr[i] !== arr[j]) {
         [arr[i], arr[j]] = [arr[j], arr[i]];
       } else {

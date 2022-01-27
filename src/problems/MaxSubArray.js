@@ -2,7 +2,9 @@ import { problemTexts } from '../constants/problemTexts'
 import PageTemplate from '../components/PageTemplate/PageTemplate'
 
 const MaxSubArray = () => {
-
+  // solution 1:
+  // T: O(n)
+  // S: O(n)
   const maxSubArray = (arr) => {
     let localMax = 0
     let globalMax = arr[0];
