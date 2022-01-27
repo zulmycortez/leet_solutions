@@ -1,5 +1,5 @@
 import React from 'react'
-import camelCaseToTitle from '../../helper/camelCaseToTitle'
+import camelCaseToTitle from '../../helpers/camelCaseToTitle'
 import NavItemStyle from './NavItemStyle'
 import ButtonDropDown from '../ButtonDropdown/ButtonDropdown'
 
